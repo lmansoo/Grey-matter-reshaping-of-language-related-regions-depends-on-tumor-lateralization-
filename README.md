@@ -22,7 +22,7 @@ What is the goal of this project?
 
 # Built with
 For the development of this project, we have used the following softwares and toolboxes in the indicated versions:
-- Matlab 2014B
+- Matlab 2021B
 - Statistical Parametric Mapping (SPM12) toolbox in Matlab for the processing of the images. https://www.fil.ion.ucl.ac.uk/spm/
 
 
