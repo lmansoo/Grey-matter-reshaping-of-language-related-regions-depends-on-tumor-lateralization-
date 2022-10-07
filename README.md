@@ -4,6 +4,7 @@
 * [General info](#general-information)
 * [Software and toolbox versions](#softwares-and-toolboxs)
 * [Setup](#setup)
+* [License](#license)
 
 # General information
 Welcome! This repository contains the developed scripts for the paper Grey matter reshaping of language-related regions depends on tumor location by Lucia Manso-Ortega, Laura de Frutos-Sagastuy, Manuel Carreiras, Sandra Gisbert-Muñoz, Joe Qiao, Patricia Walshaw, Ileana Quiñones and Monika M. Polczynska, result of a collaboration project between the University of California, Los Ángeles (USA) and the Basque center on Cognition, Brain and Language (BCBL) (Spain).
