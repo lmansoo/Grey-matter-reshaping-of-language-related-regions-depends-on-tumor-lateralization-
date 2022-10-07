@@ -6,7 +6,7 @@
 * [Built with](#built-with)
 * [License](#license)
 * [Contact](#contact)
-* [Acknowledgement](#acknowledgement)
+* [Acknowledgements](#acknowledgements)
 
 
 # General information
@@ -46,3 +46,4 @@ iquinones@bcbl.eu
 
 
 # Acknowledgement
+Codes were initially created by Ileana Quiñones at the Basque Center on Brain, Cognition and Language (BCBL), Donostia, Spain and were adapted by Lucía Manso-Ortega & Laura de Frutos-Sagastuy for the described project.
