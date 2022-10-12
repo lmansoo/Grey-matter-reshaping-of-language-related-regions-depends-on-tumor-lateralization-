@@ -24,12 +24,25 @@ PAPER + EXPLICAR PROCESO DE VBM (coger del script)
 
 # How to execute?
 
+Data structure: Folder with the name of the study and subfolders for each participant. Example: 
+
+Participant1
+T1_sag
+T2_sag
+Participant2
+T1_sag
+T2_sag
+
 Requisites before start: 
 - If you need to unzip the images, a .txt file with the list of all the images you wish to unzip
 - List of all the participants you are going to analyse saved as a txt file 
 - Download SPM 
 - Save the templates for each of the SPM modules in a 'Templates' folder 
-
+- This code also works with an ATLAS to calcute volumes per region. We suggest you have a folder with all the atlas you want to use for the study. Example:
+ATLAS
+AAL
+Rofkova
+For this study, we only used the Automated Anatomical Labelling Atlas (AAL): doi:10.1006/nimg.2001.0978
 
 ## 
 
