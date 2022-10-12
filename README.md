@@ -10,17 +10,17 @@
 
 
 # General information
-Welcome! This repository contains the developed scripts for the paper Grey matter reshaping of language-related regions depends on tumor location by Lucia Manso-Ortega, Laura de Frutos-Sagastuy, Manuel Carreiras, Sandra Gisbert-Muñoz, Joe Qiao, Patricia Walshaw, Ileana Quiñones and Monika M. Polczynska, result of a collaboration project between the University of California, Los Ángeles (USA) and the Basque center on Cognition, Brain and Language (BCBL) (Spain).
+Welcome! This repository contains the codes developped for a Voxel Based Morphometry study (VBM) performed for two different populations: healthy individuals and patients with brain tumors. 
+
+The resulting work is published as 'Grey matter reshaping of language-related regions depends on tumor location' authored by Grey matter reshaping of language-related regions depends on tumor location by Lucia Manso-Ortega, Laura de Frutos-Sagastuy, Manuel Carreiras, Sandra Gisbert-Muñoz, Joe Qiao, Patricia Walshaw, Ileana Quiñones and Monika M. Polczynska, as a result of a collaboration between the Basque Center on Cognition, Brain and Language (BCBL), San Sebastián, Spain and the University of California (UCLA), Los Ángeles, Spain.
+
 
 PAPER + EXPLICAR PROCESO DE VBM (coger del script)
 
-What is this repo or project? (You can reuse the repo description you used earlier because this section doesn’t have to be long.)
-This repository contains the scripts that have been developed for performing the segmentation of the structural MRI images of patients with brain tumors.
-
-How does it work?
-Who will use this repo or project?
-What is the goal of this project?
-
+What is this repo or project? This repository contains the codes developed for performing VBM in two different populations: healthy individuals and patients with brain tumors.
+How does it work? There are two blocks of code. One for healthy individuals that starts with a C from controls and another block of code that starts with a P for the patients.
+Who will use this repo or project? We want to share this code in case it is useful for other people working with brain tumor patients and wishing to perform VBM analysis.
+What is the goal of this project? The goal of this project was to investigate the structural reshaping of grey matter in left and right brain tumor patients when compared to a healthy control group. 
 
 # How to execute?
 
