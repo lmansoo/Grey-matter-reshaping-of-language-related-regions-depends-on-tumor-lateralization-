@@ -1,12 +1,11 @@
 %% Creating subfolders for T1 and T2 images
 
-%Authors: Laura de Frutos-Sagastuy & Lucía Manso. 
-% Basque Center on Cognition, Brain and Language (BCBL), San Sebastian, Spain
+%Authors: Laura de Frutos-Sagastuy & LucÃ­a Manso at the Basque Center on Cognition, Brain and Language (BCBL), San Sebastian, Spain
 %Last modification date: 02/06/2022
 %Content: Code for creating subfolders. A new folder for T1 and T2 images will be created for each participant  
 %This script has been done in Matlab 2021b.
-%% Starting
 
+%% Starting
 clear all
 clc
 close all
@@ -15,7 +14,7 @@ close all
 working_folder = '';
 % Make a list of the folders inside the working folder
 working_list = dir(working_folder);
-% Check the working list, if there fields you do not need, remove them
+% Check the working list, if there are fields you do not need, remove them
 % Example:
 working_list(1:2,:) = []; % Remove the empty fields
 
