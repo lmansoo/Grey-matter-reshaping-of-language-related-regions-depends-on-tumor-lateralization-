@@ -17,10 +17,10 @@ The resulting work is published as 'Grey matter reshaping of language-related re
 
 PAPER + EXPLICAR PROCESO DE VBM (coger del script)
 
-What is this repo or project? This repository contains the codes developed for performing VBM in two different populations: healthy individuals and patients with brain tumors.
-How does it work? There are two blocks of code. One for healthy individuals that starts with a C from controls and another block of code that starts with a P for the patients.
-Who will use this repo or project? We want to share this code in case it is useful for other people working with brain tumor patients and wishing to perform VBM analysis.
-What is the goal of this project? The goal of this project was to investigate the structural reshaping of grey matter in left and right brain tumor patients when compared to a healthy control group. 
+- What is this repo or project? This repository contains the codes developed for performing VBM in two different populations: healthy individuals and patients with brain tumors.
+- How does it work? There are two blocks of code. One for healthy individuals that starts with a C from controls and another block of code that starts with a P for the patients.
+- Who will use this repo or project? We want to share this code in case it is useful for other people working with brain tumor patients and wishing to perform VBM analysis.
+- What is the goal of this project? The goal of this project was to investigate the structural reshaping of grey matter in left and right brain tumor patients when compared to a healthy control group. 
 
 # How to execute?
 
@@ -44,9 +44,9 @@ For the development of this project, we have used the following softwares and to
 
 
 # Contact
-Lucía Manso-Ortega: lmanso@bcbl.eu (e-mail), @lmanso_ (twitter).
-Laura de Frutos-Sagastuy: ldefrutos@bcbl.eu (e-mail), @laura3141592 (twitter).
-Ileana Quiñones: iquinones@bcbl.eu (e-mail), @IleanaQGlez (twitter).
+- Lucía Manso-Ortega: lmanso@bcbl.eu (e-mail), @lmanso_ (twitter).
+- Laura de Frutos-Sagastuy: ldefrutos@bcbl.eu (e-mail), @laura3141592 (twitter).
+- Ileana Quiñones: iquinones@bcbl.eu (e-mail), @IleanaQGlez (twitter).
 
 # Acknowledgement
 Codes were initially created by Ileana Quiñones and were adapted by Lucía Manso-Ortega & Laura de Frutos-Sagastuy for the described project.
