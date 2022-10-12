@@ -1,33 +1,32 @@
-function ForCluster_Segmenting_LANGCONN
-%% Cluster call for neurotypical Morphometry Analysis
+function C01_ForCluster_Segmenting
 
-%Authors: 
-%Date last modification:
-%Content: 
+%% Cluster call for voxel based morphometry (VBM) analysis for neurotypical individuals
 
-%Define Atlas
+%Authors: Lucía Manso-Ortega, Laura de Frutos-Sagastuy & Ileana Quiñones, at the Basque Center on Cognition, Brain and Language (BCBL).
+%Date last modification: 12/10/22
+%Content: External call to execute the VBM function within a cluster. 
+%Requisites: Having SPM installed and the templates you are going to need already saved. A txt file with the list of all participants you are going to analyse.
 
-path_atlas= '/bcbl/home/public/Presurgical_Ileana/Matlab_Codes_2Share/Atlas_LANGCONN';
+% Define path for the folder where you saved the atlas
+
+path_atlas= '';
 atlas=dir(path_atlas);
-atlas=atlas(3:end);
+
+% Define the tissue you want to get (1=grey matter; 2=white matter)
 matter=[1 2];
 
-%% Introduction
+%% Introductory variables
 
 display Starting 
-addpath(genpath('/bcbl/home/public/Presurgical_Ileana/Toolbox/spm12'));
-addpath('/bcbl/home/public/Presurgical_Ileana/Templates');
-addpath('/bcbl/home/public/Presurgical_Ileana/Functions');
-path_participants = '/bcbl/home/public/Presurgical_Ileana/Morphometry/Controles_LANGCONN';
+
+addpath(genpath('')); %path to the folder where SPM is saved
+addpath(''); %path where the templates for each step in SPM are saved 
+addpath('/bcbl/home/public/Presurgical_Ileana/Functions'); %path where the scripts you are going to use are saved
+path_participants = ''; %path where images from healthy participants are saved
 cd(path_participants);
-participants = textread('todolist.txt','%s');
+participants = textread('name.txt','%s'); %here we access a previously created list with the names from all participants
 
-%matter = [1 2];
-% path_participants = '/bcbl/home/public/Presurgical_Ileana/LANGCONN_Morphometry';
-% cd(path_participants);
-% participants = dir(filter);
-
-%% Parallel toolbox for Matlab2014B 
+%% Parallel toolbox for Matlab2014B (Use this if you want to run more than one participant at the same time, otherwise skip this step)
 
 display(['', num2str(length(participants))]);
 if length(participants)>1 && length(participants)<32
@@ -39,7 +38,7 @@ end
 %% Loop per participant 
 for nsubj = 1: length(participants)
     subject = participants{nsubj};
-    Segmenting_LANGCONN(path_participants,subject,path_atlas,atlas,matter);
+    C02_Segmenting(path_participants,subject,path_atlas,atlas,matter);
     display(['Participant ',subject,' finished successfully']);
 end
 
