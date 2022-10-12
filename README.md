@@ -23,7 +23,13 @@ What is the goal of this project?
 
 
 # How to execute?
-## Templates for the processing of the MRI images
+
+Requisites before start: 
+- If you need to unzip the images, a .txt file with the list of all the images you wish to unzip
+- List of all the participants you are going to analyse saved as a txt file 
+- Download SPM 
+- Save the templates for each of the SPM modules in a 'Templates' folder 
+
 
 ## 
 
@@ -32,18 +38,15 @@ What is the goal of this project?
 For the development of this project, we have used the following softwares and toolboxes in the indicated versions:
 - Matlab 2021B
 - Statistical Parametric Mapping (SPM12) toolbox in Matlab for the processing of the images. https://www.fil.ion.ucl.ac.uk/spm/
-
+- Mricron software for creating the tumor masks 
 
 # License
 
 
 # Contact
-In case of 
-
-lmanso@bcbl.eu
-ldefrutos@bcbl.eu
-iquinones@bcbl.eu
-
+Lucía Manso-Ortega: lmanso@bcbl.eu (e-mail), @lmanso_ (twitter)
+Laura de Frutos-Sagastuy: ldefrutos@bcbl.eu (e-mail), @laura3141592 (twitter)
+Ileana Quiñones: iquinones@bcbl.eu (e-mail), @IleanaQGlez (twitter)
 
 # Acknowledgement
-Codes were initially created by Ileana Quiñones at the Basque Center on Brain, Cognition and Language (BCBL), Donostia, Spain and were adapted by Lucía Manso-Ortega & Laura de Frutos-Sagastuy for the described project.
+Codes were initially created by Ileana Quiñones and were adapted by Lucía Manso-Ortega & Laura de Frutos-Sagastuy for the described project.
