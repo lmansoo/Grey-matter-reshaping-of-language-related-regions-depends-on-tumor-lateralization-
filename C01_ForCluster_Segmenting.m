@@ -2,7 +2,7 @@ function C01_ForCluster_Segmenting
 
 %% Cluster call for voxel based morphometry (VBM) analysis for neurotypical individuals
 
-%Authors: Lucía Manso-Ortega, Laura de Frutos-Sagastuy & Ileana Quiñones, at the Basque Center on Cognition, Brain and Language (BCBL).
+%Authors: Lucía Manso-Ortega, Laura de Frutos-Sagastuy & Ileana Quiñones, at the Basque Center on Cognition, Brain and Language (BCBL), San Sebastian, Spain
 %Date last modification: 12/10/22
 %Content: External call to execute the VBM function within a cluster. 
 %Requisites: Having SPM installed and the templates you are going to need already saved. A txt file with the list of all participants you are going to analyse.
