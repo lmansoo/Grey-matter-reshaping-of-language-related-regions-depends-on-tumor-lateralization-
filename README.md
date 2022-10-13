@@ -45,7 +45,7 @@ AAL
 Rofkova
 For this study, we only used the Automated Anatomical Labelling Atlas (AAL): doi:10.1006/nimg.2001.0978
 
-Orden for the functions: 
+Order for the functions: 
 - For healthy controls: 
 C01_ForCluster_Segmenting.m
 C02_Segmenting.m
