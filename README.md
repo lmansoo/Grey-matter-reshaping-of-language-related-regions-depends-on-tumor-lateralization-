@@ -16,7 +16,7 @@ The resulting work is published as 'Grey matter reshaping of language-related re
 
 Voxel based morphometry is a neuroimaging technique that is commonly used to investigate focal differences in brain anatomy. VBM segments the brain into its different tissues: grey matter, white matter and cerebrospinal fluid. For a more detailed description, we suggest the following articles:
 
-Ashburner J, Friston KJ (2000) Voxel-based morphometry—the methods. Neuroimage 11:805–821.
+Ashburner J, Friston KJ (2000) Voxel-based morphometry—the methods. Neuroimage 11:805–821;
 Ashburner J, Friston KJ (2001) Why voxel-based morphometry should be used. Neuroimage 14:1238–1243.
 
 - What is this repo or project? This repository contains the codes developed for performing VBM in two different populations: healthy individuals and patients with brain tumors.
