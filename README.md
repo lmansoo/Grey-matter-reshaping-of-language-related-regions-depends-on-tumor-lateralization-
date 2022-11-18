@@ -13,7 +13,7 @@
 
 Welcome! This repository contains the codes developped for a Voxel Based Morphometry study (VBM) performed for two different populations: healthy individuals and patients with brain tumors to investigate structural plasticity. 
 
-The resulting work is published as 'Grey matter reshaping of language-related regions depends on tumor location' authored by Grey matter reshaping of language-related regions depends on tumor location by Lucia Manso-Ortega, Laura de Frutos-Sagastuy, Sandra Gisbert-Muñoz, Joe Qiao, Patricia Walshaw, Ileana Quiñones and Monika M. Polczynska, as a result of a collaboration between the [Basque Center on Cognition, Brain and Language (BCBL)](https://www.bcbl.eu/es), San Sebastián, Spain and the [University of California (UCLA), Los Ángeles, California (USA)](https://www.ucla.edu/).
+The resulting work is published as 'Grey matter reshaping of language-related regions depends on tumor location' authored by Grey matter reshaping of language-related regions depends on tumor location by Lucia Manso-Ortega, Laura de Frutos-Sagastuy, Sandra Gisbert-Muñoz, Joe Qiao, Patricia Walshaw, Ileana Quiñones and Monika M. Polczynska, as a result of a collaboration between the [Basque Center on Cognition, Brain and Language (BCBL)](https://www.bcbl.eu/es), San Sebastián, Spain and the [University of California (UCLA)](https://www.ucla.edu/), Los Ángeles, California (USA).
 
 Voxel based morphometry (VBM) is a neuroimaging technique that is commonly used to investigate focal differences in brain anatomy. VBM segments the brain into its different tissues: grey matter, white matter and cerebrospinal fluid. For a more detailed description, we suggest the following articles:
 
