@@ -13,12 +13,14 @@
 
 Welcome! This repository contains the codes developped for a Voxel Based Morphometry study (VBM) performed for two different populations: healthy individuals and patients with brain tumors to investigate structural plasticity. 
 
-The resulting work is published as 'Grey matter reshaping of language-related regions depends on tumor location' authored by Grey matter reshaping of language-related regions depends on tumor location by Lucia Manso-Ortega, Laura de Frutos-Sagastuy, Sandra Gisbert-Muñoz, Joe Qiao, Patricia Walshaw, Ileana Quiñones and Monika M. Polczynska, as a result of a collaboration between the Basque Center on Cognition, Brain and Language (BCBL), San Sebastián, Spain and the University of California (UCLA), Los Ángeles, California (USA).
+The resulting work is published as 'Grey matter reshaping of language-related regions depends on tumor location' authored by Grey matter reshaping of language-related regions depends on tumor location by Lucia Manso-Ortega, Laura de Frutos-Sagastuy, Sandra Gisbert-Muñoz, Joe Qiao, Patricia Walshaw, Ileana Quiñones and Monika M. Polczynska, as a result of a collaboration between the [Basque Center on Cognition, Brain and Language (BCBL)](https://www.bcbl.eu/es), San Sebastián, Spain and the [University of California (UCLA), Los Ángeles, California (USA)](https://www.ucla.edu/).
 
 Voxel based morphometry (VBM) is a neuroimaging technique that is commonly used to investigate focal differences in brain anatomy. VBM segments the brain into its different tissues: grey matter, white matter and cerebrospinal fluid. For a more detailed description, we suggest the following articles:
 
-[Ashburner J, Friston KJ (2000) Voxel-based morphometry—the methods. Neuroimage 11:805–821](https://pubmed.ncbi.nlm.nih.gov/10860804/)
-[Ashburner J, Friston KJ (2001) Why voxel-based morphometry should be used. Neuroimage 14:1238–1243](https://pubmed.ncbi.nlm.nih.gov/11707080/)
+✔️ [Ashburner J, Friston KJ (2000) Voxel-based morphometry—the methods. Neuroimage 11:805–821](https://pubmed.ncbi.nlm.nih.gov/10860804/)
+
+✔️ [Ashburner J, Friston KJ (2001) Why voxel-based morphometry should be used. Neuroimage 14:1238–1243](https://pubmed.ncbi.nlm.nih.gov/11707080/)
+
 
 - What is this repo or project? This repository contains the codes developed for performing VBM in two different populations: healthy individuals and patients with brain tumors.
 - How does it work? There are two blocks of code. One for healthy individuals that starts with a C from controls and another block of code that starts with a P for the patients.
@@ -65,7 +67,7 @@ For this study, we only used the [AAL](https://pubmed.ncbi.nlm.nih.gov/11771995/
 For the development of this project, we have used the following softwares and toolboxes in the indicated versions:
 - Matlab 2021B
 - [Statistical Parametric Mapping](https://www.fil.ion.ucl.ac.uk/spm/) (SPM12) toolbox in Matlab for the processing of the images. 
-- Mricron software for creating the tumor masks 
+- [Mricron](https://www.nitrc.org/projects/mricron) software for creating the tumor masks 
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" height=50 width=50/> <img src="https://www.fil.ion.ucl.ac.uk/spm/images/spm12.png" height=60 width=60/> <img src="https://people.cas.sc.edu/rorden/mricro/icon.png" height=50 width=70/>
 
