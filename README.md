@@ -10,6 +10,7 @@
 
 
 # General information
+
 Welcome! This repository contains the codes developped for a Voxel Based Morphometry study (VBM) performed for two different populations: healthy individuals and patients with brain tumors to investigate structural plasticity. 
 
 The resulting work is published as 'Grey matter reshaping of language-related regions depends on tumor location' authored by Grey matter reshaping of language-related regions depends on tumor location by Lucia Manso-Ortega, Laura de Frutos-Sagastuy, Sandra Gisbert-Muñoz, Joe Qiao, Patricia Walshaw, Ileana Quiñones and Monika M. Polczynska, as a result of a collaboration between the Basque Center on Cognition, Brain and Language (BCBL), San Sebastián, Spain and the University of California (UCLA), Los Ángeles, California (USA).
@@ -24,39 +25,42 @@ Ashburner J, Friston KJ (2001) Why voxel-based morphometry should be used. Neuro
 - Who will use this repo or project? We want to share this code in case it is useful for other people working with brain tumor patients and wishing to perform VBM analysis.
 - What is the goal of this project? The goal of this project was to investigate the structural reshaping of grey matter in left and right brain tumor patients when compared to a healthy control group. 
 
-# How to execute?
+# How to execute? 
 
-Data structure: Folder with the name of the study and subfolders for each participant. Example: 
-Participant1
-T1_sag
-T2_sag
-Participant2
-T1_sag
-T2_sag
+🏗️ **Data structure.** Main folder with the name of the study and subfolders for each participant. Example: 
+- Experiment
+  - Participant1
+    - T1_sag
+    - T2_sag
+  - Participant2
+    - T1_sag
+    - T2_sag
 
-Requisites before start: 
+
+✔️ **Requisites before start:**
 - [x] If you need to unzip the images, a .txt file with the list of all the images you wish to unzip
 - [x] List of all the participants you are going to analyse saved as a txt file 
 - [x] Download SPM 
 - [x] Save the templates for each of the SPM modules in a 'Templates' folder 
 - [x] This code also works with an ATLAS to calcute the volumes per region. We suggest you have a folder with all the atlases you want to use for the study. 
-For example:
-- ATLAS
-- AAL
-- Rofkova
+      For example:
+      - ATLAS
+      - AAL
+      - Rofkova
 
 For this study, we only used the Automated Anatomical Labelling Atlas (AAL): doi:10.1006/nimg.2001.0978
 
-Order for the functions: 
-- [ ] For healthy controls: 
-- C01_ForCluster_Segmenting.m
-- C02_Segmenting.m
 
-- [ ] For the patients:
-- P01_Unzip.m
-- P02_Subfolders_T1T2.m
-- P03_ForCluster_Segmenting.m
-- P04_Segmenting.m
+▶️ **Order for the functions:**
+1. For healthy controls: 
+   - C01_ForCluster_Segmenting.m
+   - C02_Segmenting.m
+
+2. For the patients:
+   - P01_Unzip.m
+   - P02_Subfolders_T1T2.m
+   - P03_ForCluster_Segmenting.m
+   - P04_Segmenting.m
 
 # Built with
 For the development of this project, we have used the following softwares and toolboxes in the indicated versions:
