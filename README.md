@@ -17,9 +17,9 @@ The resulting work is published as 'Grey matter reshaping of language-related re
 
 Voxel based morphometry (VBM) is a neuroimaging technique that is commonly used to investigate focal differences in brain anatomy. VBM segments the brain into its different tissues: grey matter, white matter and cerebrospinal fluid. For a more detailed description, we suggest the following articles:
 
-✔️ [Ashburner J, Friston KJ (2000) Voxel-based morphometry—the methods. Neuroimage 11:805–821](https://pubmed.ncbi.nlm.nih.gov/10860804/)
+📖 [Ashburner J, Friston KJ (2000) Voxel-based morphometry—the methods. Neuroimage 11:805–821](https://pubmed.ncbi.nlm.nih.gov/10860804/)
 
-✔️ [Ashburner J, Friston KJ (2001) Why voxel-based morphometry should be used. Neuroimage 14:1238–1243](https://pubmed.ncbi.nlm.nih.gov/11707080/)
+📖 [Ashburner J, Friston KJ (2001) Why voxel-based morphometry should be used. Neuroimage 14:1238–1243](https://pubmed.ncbi.nlm.nih.gov/11707080/)
 
 
 - What is this repo or project? This repository contains the codes developed for performing VBM in two different populations: healthy individuals and patients with brain tumors.
@@ -40,16 +40,16 @@ Voxel based morphometry (VBM) is a neuroimaging technique that is commonly used 
 
 
 ✔️ **Requisites before start:**
-- [x] If you need to unzip the images, a .txt file with the list of all the images you wish to unzip
-- [x] List of all the participants you are going to analyse saved as a txt file 
-- [x] Download SPM 
-- [x] Save the templates for each of the SPM modules in a 'Templates' folder 
+- [x] If you need to unzip the images, create a .txt file with the list of all the images you wish to unzip. One row per file name.
+- [x] Create a list of all the participants you are going to analyse saved as a .txt file.
+- [x] [Download SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download/).
+- [x] Save the templates for each of the SPM12 modules in a 'Templates' folder.
 - [x] This code also works with an ATLAS to calcute the volumes per region. We suggest you have a folder with all the atlases you want to use for the study. For example:
   - ATLAS
   - Automated Anatomical Labelling Atlas (AAL)
   - Rofkova
 
-For this study, we only used the [AAL](https://pubmed.ncbi.nlm.nih.gov/11771995/)
+For this study, we only used the [AAL](https://pubmed.ncbi.nlm.nih.gov/11771995/) atlas.
 
 
 ▶️ **Order for the functions:**
@@ -65,11 +65,15 @@ For this study, we only used the [AAL](https://pubmed.ncbi.nlm.nih.gov/11771995/
 
 # Built with
 For the development of this project, we have used the following softwares and toolboxes in the indicated versions:
-- Matlab 2021B
-- [Statistical Parametric Mapping](https://www.fil.ion.ucl.ac.uk/spm/) (SPM12) toolbox in Matlab for the processing of the images. 
-- [Mricron](https://www.nitrc.org/projects/mricron) software for creating the tumor masks 
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" height=50 width=50/> <img src="https://www.fil.ion.ucl.ac.uk/spm/images/spm12.png" height=60 width=60/> <img src="https://people.cas.sc.edu/rorden/mricro/icon.png" height=50 width=70/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" height=20 width=20/> Matlab 2021B
+
+<img src="https://www.fil.ion.ucl.ac.uk/spm/images/spm12.png" height=25 width=25/> [Statistical Parametric Mapping](https://www.fil.ion.ucl.ac.uk/spm/) (SPM12) toolbox in Matlab for the processing of the images. 
+
+
+<img src="https://people.cas.sc.edu/rorden/mricro/icon.png" height=10 width=15/> [Mricron](https://www.nitrc.org/projects/mricron) software for creating the tumor masks 
+
+  
 
 
 # License
