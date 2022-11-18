@@ -8,7 +8,6 @@
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
-
 # General information
 
 Welcome! This repository contains the codes developped for a Voxel Based Morphometry study (VBM) performed for two different populations: healthy individuals and patients with brain tumors to investigate structural plasticity. 
