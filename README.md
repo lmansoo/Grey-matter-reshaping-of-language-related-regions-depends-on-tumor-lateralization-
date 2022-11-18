@@ -75,9 +75,9 @@ For the development of this project, we have used the following softwares and to
 
 
 # Contact
-- Lucía Manso-Ortega: lmanso@bcbl.eu (e-mail), @lmanso_ (twitter).
-- Laura de Frutos-Sagastuy: ldefrutos@bcbl.eu (e-mail), @laura3141592 (twitter).
-- Ileana Quiñones: iquinones@bcbl.eu (e-mail), @IleanaQGlez (twitter).
+- Lucía Manso-Ortega: 📧 lmanso@bcbl.eu 🐦 [@lmanso_](https://twitter.com/lmanso_?t=IrcvEAfN-fsiAWpH_0HFhA&s=08)
+- Laura de Frutos-Sagastuy: 📧 ldefrutos@bcbl.eu 🐦[@laura3141592](https://twitter.com/laura3141592?t=07ylNOY2Bha5Xtcf_pIEEw&s=08)
+- Ileana Quiñones: 📧 iquinones@bcbl.eu 🐦 [@IleanaQGlez](https://twitter.com/IleanaQGlez?t=bXZhMWUzSlBKKYAJ-lmHCA&s=08)
 
 # Acknowledgements
 Codes were initially created by Ileana Quiñones and were adapted by Lucía Manso-Ortega & Laura de Frutos-Sagastuy for the described project.
