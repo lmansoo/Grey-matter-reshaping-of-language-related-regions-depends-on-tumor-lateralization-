@@ -45,10 +45,10 @@ Ashburner J, Friston KJ (2001) Why voxel-based morphometry should be used. Neuro
 - [x] This code also works with an ATLAS to calcute the volumes per region. We suggest you have a folder with all the atlases you want to use for the study. 
       For example:
       - ATLAS
-      - AAL
+      - Automated Anatomical Labelling Atlas (AAL)
       - Rofkova
 
-For this study, we only used the Automated Anatomical Labelling Atlas [(AAL)](doi:10.1006/nimg.2001.0978)
+For this study, we only used the [AAL](https://pubmed.ncbi.nlm.nih.gov/11771995/)
 
 
 ▶️ **Order for the functions:**
