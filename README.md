@@ -48,7 +48,7 @@ Ashburner J, Friston KJ (2001) Why voxel-based morphometry should be used. Neuro
       - AAL
       - Rofkova
 
-For this study, we only used the Automated Anatomical Labelling Atlas (AAL): doi:10.1006/nimg.2001.0978
+For this study, we only used the Automated Anatomical Labelling Atlas [(AAL)](doi:10.1006/nimg.2001.0978)
 
 
 ▶️ **Order for the functions:**
