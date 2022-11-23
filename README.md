@@ -85,3 +85,5 @@ For the development of this project, we have used the following softwares and to
 
 # Acknowledgements
 Codes were initially created by Ileana Quiñones and were adapted by Lucía Manso-Ortega & Laura de Frutos-Sagastuy for the described project.
+
+# Frequently asked questions
