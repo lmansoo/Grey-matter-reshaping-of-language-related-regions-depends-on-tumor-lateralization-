@@ -1,5 +1,8 @@
 function P03_ForCluster_Segmenting(reor)
-% Authors: Lucia Manso, Laura de Frutos-Sagastuy and Ileana Quiñones at the Basque Center on Cognition, Brain and Language (BCBL), San Sebastian, Spain
+%Title of the study: Grey matter reshaping of language related regions depends on tumor lateralization
+%Authors: LLucia Manso-Ortega1, 2*, Laura De Frutos-Sagastuy1, Sandra Gisbert- Muñoz1, 2, Noriko Salamon3, Joe Qiao3, Patricia Walshaw4, Ileana Quiñones1*, Monika M. Połczyńska4
+%Original script created by Sandra Gisbert-Muñoz and Ileana Quiñones
+%Modifications for the described study: Lucía Manso-Ortega and Laura de Frutos-Sagastuy
 % Las modification date: 13/05/2022
 % Content: This code is a call for the function to be executed in a cluster. It calls the function P04_Segmenting that you can also use on its own.
 
