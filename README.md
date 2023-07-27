@@ -83,6 +83,7 @@ For the development of this project, we have used the following softwares and to
 - Ileana Quiñones: 📧 iquinones@bcbl.eu 🐦 [@IleanaQGlez](https://twitter.com/IleanaQGlez?t=bXZhMWUzSlBKKYAJ-lmHCA&s=08)
 
 # Acknowledgements
-Codes were initially created by Ileana Quiñones and were adapted by Lucía Manso-Ortega & Laura de Frutos-Sagastuy for the described project.
+Original codes were created by Sandra Gisbert-Muñonz and Ileana Quiñones and can be found here: https://github.com/iquinones1959/VBM_PresurgicalAnalysis
+Codes published in this repository were adapted by Lucía Manso-Ortega & Laura de Frutos-Sagastuy for the study "Grey matter reshaping of language related regions depends on tumor lateralization".
 
 # Frequently asked questions
