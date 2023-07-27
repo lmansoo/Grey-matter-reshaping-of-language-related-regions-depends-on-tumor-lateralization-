@@ -2,7 +2,10 @@ function C01_ForCluster_Segmenting
 
 %% Cluster call for voxel based morphometry (VBM) analysis for neurotypical individuals
 
-%Authors: Lucía Manso-Ortega, Laura de Frutos-Sagastuy & Ileana Quiñones, at the Basque Center on Cognition, Brain and Language (BCBL), San Sebastian, Spain
+%Title of the study: Grey matter reshaping of language related regions depends on tumor lateralization
+%Authors: LLucia Manso-Ortega1, 2*, Laura De Frutos-Sagastuy1, Sandra Gisbert- Muñoz1, 2, Noriko Salamon3, Joe Qiao3, Patricia Walshaw4, Ileana Quiñones1*, Monika M. Połczyńska4
+%Original script created by Sandra Gisbert-Muñoz and Ileana Quiñones
+%Modifications for the described study: Lucía Manso-Ortega and Laura de Frutos-Sagastuy
 %Date last modification: 12/10/22
 %Content: External call to execute the VBM function within a cluster. 
 %Requisites: Having SPM installed and the templates you are going to need already saved. A txt file with the list of all participants you are going to analyse.
