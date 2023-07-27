@@ -1,6 +1,8 @@
 %% Creating subfolders for T1 and T2 images
 
-%Authors: Laura de Frutos-Sagastuy & Lucía Manso at the Basque Center on Cognition, Brain and Language (BCBL), San Sebastian, Spain
+%Title of the study: Grey matter reshaping of language related regions depends on tumor lateralization
+%Authors: LLucia Manso-Ortega1, 2*, Laura De Frutos-Sagastuy1, Sandra Gisbert- Muñoz1, 2, Noriko Salamon3, Joe Qiao3, Patricia Walshaw4, Ileana Quiñones1*, Monika M. Połczyńska4
+%Script created by: Laura de Frutos-Sagastuy and Lucía Manso-Ortega
 %Last modification date: 02/06/2022
 %Content: Code for creating subfolders. A new folder for T1 and T2 images will be created for each participant  
 %This script has been done in Matlab 2021b.
