@@ -37,16 +37,15 @@ Voxel based morphometry (VBM) is a neuroimaging technique that is commonly used 
     - T1_sag
     - T2_sag
 
-
 ✔️ **Requisites before start:**
 - [x] If you need to unzip the images, create a .txt file with the list of all the images you wish to unzip. One row per file name.
 - [x] Create a list of all the participants you are going to analyse saved as a .txt file.
 - [x] [Download SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download/).
 - [x] Save the templates for each of the SPM12 modules in a 'Templates' folder.
 - [x] This code also works with an ATLAS to calcute the volumes per region. We suggest you have a folder with all the atlases you want to use for the study. For example:
-  - ATLAS
-   - Automated Anatomical Labelling Atlas (AAL) [Tzourio-Mazoyer N., Josse G., Crivello F., and Mazoyer B.. 2004. “Interindividual Variability in the Hemispheric Organization for Speech.” NeuroImage 21 (1): 422–35. 10.1016/j.neuroimage.2003.08.032.]
-   - Rojkova [Rojkova K, Volle E, Urbanski M, Humbert F, Dell'Acqua F, Thiebaut de Schotten M. Atlasing the frontal lobe connections and their variability due to age and education: a spherical deconvolution tractography study. Brain Struct Funct. 2016 Apr;221(3):1751-66. doi: 10.1007/s00429-015-1001-3. Epub 2015 Feb 15. PMID: 25682261.]
+- ATLAS
+   - Automated Anatomical Labelling Atlas (AAL) [Tzourio-Mazoyer N., Josse G., Crivello F., and Mazoyer B.. 2004. “Interindividual Variability in the Hemispheric Organization for Speech.” NeuroImage 21 (1): 422–35. 10.1016/j.neuroimage.2003.08.032.](https://www.sciencedirect.com/science/article/pii/S1053811919307803)
+   - Rojkova [Rojkova K, Volle E, Urbanski M, Humbert F, Dell'Acqua F, Thiebaut de Schotten M. Atlasing the frontal lobe connections and their variability due to age and education: a spherical deconvolution tractography study. Brain Struct Funct. 2016 Apr;221(3):1751-66. doi: 10.1007/s00429-015-1001-3. Epub 2015 Feb 15. PMID: 25682261.](https://pubmed.ncbi.nlm.nih.gov/25682261/)
 
 For this study "Grey matter reshaping of language related regions depends on tumor lateralization", we only used the [AAL](https://pubmed.ncbi.nlm.nih.gov/11771995/) atlas.
 
