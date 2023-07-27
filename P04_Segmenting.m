@@ -24,27 +24,24 @@ function P04_Segmenting(path_participants, subject, reor, path_atlas, atlas, mat
 % Tumor mask
 % Template of a brain for the extraction of the brain from the patients T1
 
-%2. Brain extraction module
-%After corregistering the template with the native space of the patient, the image of the patient is multiplied by the template to remove any noise
-
-%3. Adjust commisures 
+%2. Adjust commisures 
 %SPM requires us to manually set the origin (i.e., values of 0,0,0 for the x-,y- and z- dimensions)
 %It sets the anterior commisure, a bundle of white matter fibers that connect the anterior lobes of the brain as the origin
 %This will improve the chances for our normalization to be successful
 
-%4. Tissue segmentation
+%3. Tissue segmentation
 %Segments structural images in the 3 main tissues: grey matter (c1), white matter (c2) and CSF (c3)ç
 %It saves the tissue in native and normalized space 
 %In this case, we are working in the native space of the participants all the time
 
-%5. Prepare the tumor mask
+%4. Prepare the tumor mask
 % Binarises the tumor mask. Normalised it, reslices it. This step is performed to match voxel-by-voxel the tumor mask and the T1 image of the patient
 
-%6. Volume estimation
+%5. Volume estimation
 %Estimates volume in native space for GM, WM and CSF and calcuates the total intracraneal volume (TIV) (including with and without tumor volume)
 %Saves a table with the volumes
 
-%7. Volume estimation for the atlas ROIs
+%6. Volume estimation for the atlas ROIs
 %The atlas(es) you want to use for the analysis must be saved in separate folders inside path_atlas, which is defined in the cluster call function (P03_Forluster_Segmenting)
 
 %References:
@@ -66,44 +63,8 @@ cd(path_mask)
 mask = textread('list.txt','%s');
 mascara = mask{1};
 t1folder = dir([path_participants,filesep,subject,filesep,'*T1_sag*']); %Obtain the list of all the files in the T1_sag folder of the patient.
-
-%%2. Brain extraction module
-matlabbatch = load ('Template_Reslice12.mat'); %Load the template of the SPM for corregister
-matlabbatch = matlabbatch.matlabbatch;
-%Fill the fields of the template with the required information:
-%The patient's head image (nii format) is the reference. 
-%The string at the end is a filter that selects the image of the head (nii format) from the T1_sag folder.
-matlabbatch{1}.spm.spatial.coreg.write.ref = cellstr(spm_select('FPList',[path_participants,filesep,subject,filesep,t1folder.name], '^*head.*.nii$'));
-%Template is transforming into patient's T1 space. 
-%The template has to be in the same participant's folder.
-matlabbatch{1}.spm.spatial.coreg.write.source = cellstr(spm_select('FPList',[path_participants,filesep,subject,filesep,t1folder.name], '^mask_.*.nii$')); 
-%Indicate the method by which the images are sampled when beng written in a different space.
-%0 = nearest neighbour method, 1 = trilinear
-matlabbatch{1}.spm.spatial.coreg.write.roptions.interp = 0; 
-spm_jobman('run', matlabbatch);
-
-%The output image of this step (template in native space of the patient) has an 'r' at the 
-%beginning of the file's name.
-
-%Load the SPM12 template for multiplying 2 images
-matlabbatch = load('Template_ImCalc12.mat');
-matlabbatch = matlabbatch.matlabbatch;
-%Indicate the template nativo (i1 image): 
-matlabbatch{1}.spm.util.imcalc.input = cellstr(spm_select('FPList',[path_participants,filesep,subject,filesep,t1folder.name],'^r.*mask.*\.nii$'));
-%Indicate the T1 image of the patient (i2 iamge) (R): 
-matlabbatch{1}.spm.util.imcalc.input(2,1) = cellstr(spm_select('FPList',[path_participants,filesep,subject,filesep,t1folder.name],'^.*head.*.nii$'));
-%Output directory: 
-matlabbatch{1}.spm.util.imcalc.outdir = cellstr([path_participants,filesep,subject,filesep,t1folder.name]);
-%Name of the output image: 
-matlabbatch{1}.spm.util.imcalc.output = 'Brain';
-%Mathematical operation we want to perform between the images. 
-matlabbatch{1}.spm.util.imcalc.expression = 'i2.*i1'; 
-%Interpolation method
-%0 = nearest neighbour method, 1 = trilinear
-matlabbatch{1}.spm.util.imcalc.options.interp = 0; 
-spm_jobman('run',matlabbatch);
     
-%%3. Adjust commisures T1
+%%2. Adjust commisures T1
 %Select the T1 image of the patient
 imageT1 = spm_select('FPList',[path_participants,filesep,subject,filesep,t1folder.name],'^.*head.*\.nii$');
 if reor == 1
@@ -111,7 +72,7 @@ if reor == 1
     spm_auto_reorient(imageT1,'T1');
 end
  
-%%4. Tissue segmentation
+%%3. Tissue segmentation
 %Load the SPM12 template for performing the segmentation
 matlabbatch = load ('Template_SegmentT1T2_spm12.mat');
 matlabbatch = matlabbatch.matlabbatch;
@@ -133,7 +94,7 @@ spm_jobman('run', matlabbatch);
 %Show in the screen when the subject has finished segmenting
 display(['Done segment - Suj_' subject]);
 
-%%5. Prepare tumor mask. 
+%%4. Prepare tumor mask. 
 %Binarise the mask
 matlabbatch = load('Template_ImCalc12.mat');
 matlabbatch = matlabbatch.matlabbatch;
@@ -177,7 +138,7 @@ matlabbatch{1}.spm.spatial.coreg.write.roptions.interp = 0;
 %Run the job
 spm_jobman('run', matlabbatch);
 
-%%6. Volume estimation
+%%5. Volume estimation
 %Define T1 folder
 t1folder = dir([path_participants,filesep,subject,filesep,'*T1_sag*']);
 %Select resliced binarized image of the tumor mask
@@ -253,7 +214,7 @@ fclose(fid);
 %Save the volumes in .mat format
 save([path_participants,filesep,subject,filesep,'TIV_',date,'.mat'], 'Tvol');
 
-%%7. Volume estimation for the atlas ROIs 
+%%6. Volume estimation for the atlas ROIs 
 % Create a list with directories to the segmented tissues without the tumor
 seg_nat_noTumor =  spm_select('FPList',[path_participants,filesep,subject,filesep,t1folder.name], '^noTumor_.*.nii$');
 %Create a list with the directory to the resliced, binarized and smoothed
