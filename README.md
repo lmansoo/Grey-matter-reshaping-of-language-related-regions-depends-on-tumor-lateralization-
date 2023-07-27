@@ -45,8 +45,8 @@ Voxel based morphometry (VBM) is a neuroimaging technique that is commonly used 
 - [x] Save the templates for each of the SPM12 modules in a 'Templates' folder.
 - [x] This code also works with an ATLAS to calcute the volumes per region. We suggest you have a folder with all the atlases you want to use for the study. For example:
   - ATLAS
-  - Automated Anatomical Labelling Atlas (AAL)
-  - Rofkova
+   - Automated Anatomical Labelling Atlas (AAL)
+   - Rofkova
 
 For this study, we only used the [AAL](https://pubmed.ncbi.nlm.nih.gov/11771995/) atlas.
 
