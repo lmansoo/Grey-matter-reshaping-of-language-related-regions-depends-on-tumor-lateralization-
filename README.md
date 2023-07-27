@@ -7,6 +7,7 @@
 * [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
+* [Citation](#citation)
 
 # General information
 
