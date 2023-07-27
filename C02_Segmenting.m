@@ -42,6 +42,10 @@ function C02_Segmenting(path_participants,reor,subject,path_atlas,atlas,matter)
 %It saves the tissue in native and normalized space 
 %In this case, we are working in the native space of the participants all the time
 
+%5. Smooth
+%A Gaussian filter is applied to the image in order to reduce noise and potentiate the statistical differences. The most typical kernels are [10mm x 10mm x 10mm], [8mm x 8mm x 8mm]
+%and [6mm x 6mm x 6mm]. Smaller the structures, smaller the kernels.
+
 %5. Volume estimation
 %Estimates volume in native space for GM, WM and CSF and calcuates the total intracraneal volume (TIV)
 %Saves a table with the volumes
@@ -120,7 +124,18 @@ ave test.mat matlabbatch
 spm_jobman('run', matlabbatch);
 display(['Done segment - Suj_' subject]);
 
-%% 5. Volume estimation
+%% 5.Smooth
+% 
+% matlabbatch = load ('Template_Smooth.mat');
+% matlabbatch = matlabbatch.matlabbatch;
+% matlabbatch{1}.spm.spatial.smooth.data = cellstr(spm_select('FPList',[path_participants,filesep,subject,filesep,t1folder.name], '^wc.*.nii$'));
+% matlabbatch{1}.spm.spatial.smooth.fwhm = [8 8 8];
+% spm_jobman('run', matlabbatch);
+% display(['Done smooth - Suj_' subject]);
+% 
+% toc;
+
+%% 6. Volume estimation
 t1folder = dir([path_participants,filesep,subject,filesep,'*T1_sag*']); %define T1 folder
 seg_nat =  spm_select('FPList',[path_participants,filesep,subject,filesep,t1folder.name], '^c.*\.nii$'); %select the segmented tissues in the native space
 ind_seg = strfind(seg_nat(1,:),filesep);
@@ -148,7 +163,7 @@ fclose(fid);
 %Save the volumes in .mat format
 save([path_participants,filesep,subject,filesep,'TIV_',date,'.mat'], 'Tvol');
 
-%%6. Volume estimation for Atlas(es) regions
+%%7. Volume estimation for Atlas(es) regions
 seg_nat =  spm_select('FPList',[path_participants,filesep,subject,filesep,t1folder.name], '^c.*\.nii$'); %list with directories of the segmented tissues)
 
 %This step will be done as many times as number of atlas in the path_atlas folder
