@@ -45,10 +45,10 @@ Voxel based morphometry (VBM) is a neuroimaging technique that is commonly used 
 - [x] Save the templates for each of the SPM12 modules in a 'Templates' folder.
 - [x] This code also works with an ATLAS to calcute the volumes per region. We suggest you have a folder with all the atlases you want to use for the study. For example:
   - ATLAS
-   - Automated Anatomical Labelling Atlas (AAL)
-   - Rofkova
+   - Automated Anatomical Labelling Atlas (AAL) [Tzourio-Mazoyer N., Josse G., Crivello F., and Mazoyer B.. 2004. “Interindividual Variability in the Hemispheric Organization for Speech.” NeuroImage 21 (1): 422–35. 10.1016/j.neuroimage.2003.08.032.]
+   - Rojkova [Rojkova K, Volle E, Urbanski M, Humbert F, Dell'Acqua F, Thiebaut de Schotten M. Atlasing the frontal lobe connections and their variability due to age and education: a spherical deconvolution tractography study. Brain Struct Funct. 2016 Apr;221(3):1751-66. doi: 10.1007/s00429-015-1001-3. Epub 2015 Feb 15. PMID: 25682261.]
 
-For this study, we only used the [AAL](https://pubmed.ncbi.nlm.nih.gov/11771995/) atlas.
+For this study "Grey matter reshaping of language related regions depends on tumor lateralization", we only used the [AAL](https://pubmed.ncbi.nlm.nih.gov/11771995/) atlas.
 
 
 ▶️ **Order for the functions:**
