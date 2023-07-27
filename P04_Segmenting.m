@@ -37,14 +37,18 @@ function P04_Segmenting(path_participants, subject, reor, path_atlas, atlas, mat
 %It saves the tissue in native and normalized space 
 %In this case, we are working in the native space of the participants all the time
 
-%4. Prepare the tumor mask
+%4. Smooth
+%A Gaussian filter is applied to the image in order to reduce noise and potentiate the statistical differences.
+%The most typical kernels are [10mm x 10mm x 10mm], [8mm x 8mm x 8mm] and [6mm x 6mm x 6mm]. Smaller the structures, smaller kernels.
+
+%5. Prepare the tumor mask
 % Binarises the tumor mask. Normalised it, reslices it. This step is performed to match voxel-by-voxel the tumor mask and the T1 image of the patient
 
-%5. Volume estimation
+%6. Volume estimation
 %Estimates volume in native space for GM, WM and CSF and calcuates the total intracraneal volume (TIV) (including with and without tumor volume)
 %Saves a table with the volumes
 
-%6. Volume estimation for the atlas ROIs
+%7. Volume estimation for the atlas ROIs
 %The atlas(es) you want to use for the analysis must be saved in separate folders inside path_atlas, which is defined in the cluster call function (P03_Forluster_Segmenting)
 
 %References:
@@ -97,7 +101,22 @@ spm_jobman('run', matlabbatch);
 %Show in the screen when the subject has finished segmenting
 display(['Done segment - Suj_' subject]);
 
-%%4. Prepare tumor mask. 
+%%4. Smooth the segmentation
+%Load the SPM12 template for performing the smoothing step
+matlabbatch = load ('Template_Smooth.mat');
+matlabbatch = matlabbatch.matlabbatch;
+%Select all the segmented normized tissues to smooth
+%The smoothed images are saved in the same directories as the original images.
+matlabbatch{1}.spm.spatial.smooth.data = cellstr(spm_select('FPList',[path_participants,filesep,subject,filesep,t1folder.name], '^wc.*.nii$'));
+%Establish the full width half maximum of the Gaussian smoothing kernel in mm: [x y z]
+matlabbatch{1}.spm.spatial.smooth.fwhm = [10 10 10];
+%Run the job
+spm_jobman('run', matlabbatch);
+
+%Show in the screen when the smoothing has finished
+display(['Done smooth - Suj_' subject]);
+
+%%5. Prepare tumor mask. 
 %Binarise the mask
 matlabbatch = load('Template_ImCalc12.mat');
 matlabbatch = matlabbatch.matlabbatch;
@@ -141,7 +160,7 @@ matlabbatch{1}.spm.spatial.coreg.write.roptions.interp = 0;
 %Run the job
 spm_jobman('run', matlabbatch);
 
-%%5. Volume estimation
+%%6. Volume estimation
 %Define T1 folder
 t1folder = dir([path_participants,filesep,subject,filesep,'*T1_sag*']);
 %Select resliced binarized image of the tumor mask
@@ -217,7 +236,7 @@ fclose(fid);
 %Save the volumes in .mat format
 save([path_participants,filesep,subject,filesep,'TIV_',date,'.mat'], 'Tvol');
 
-%%6. Volume estimation for the atlas ROIs 
+%%7. Volume estimation for the atlas ROIs 
 % Create a list with directories to the segmented tissues without the tumor
 seg_nat_noTumor =  spm_select('FPList',[path_participants,filesep,subject,filesep,t1folder.name], '^noTumor_.*.nii$');
 %Create a list with the directory to the resliced, binarized and smoothed
