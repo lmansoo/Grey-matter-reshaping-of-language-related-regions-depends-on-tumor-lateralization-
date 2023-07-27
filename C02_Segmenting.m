@@ -46,11 +46,11 @@ function C02_Segmenting(path_participants,reor,subject,path_atlas,atlas,matter)
 %A Gaussian filter is applied to the image in order to reduce noise and potentiate the statistical differences. The most typical kernels are [10mm x 10mm x 10mm], [8mm x 8mm x 8mm]
 %and [6mm x 6mm x 6mm]. Smaller the structures, smaller the kernels.
 
-%5. Volume estimation
+%6. Volume estimation
 %Estimates volume in native space for GM, WM and CSF and calcuates the total intracraneal volume (TIV)
 %Saves a table with the volumes
 
-%6. Volume estimation for Atlas regions
+%7. Volume estimation for Atlas regions
 %The atlas(es) you want to use for the analysis must be saved in separate folders inside path_atlas, which is defined in the cluster call function (C01_Forluster_Segmenting)
 
 %References:
