@@ -1,6 +1,8 @@
 %% Unzip images to nii file
 
-%Authors: Lucía Manso & Laura de Frutos-Sagastuy at the Basque Center on Cognition, Brain and Language (BCBL), San Sebastian, Spain
+%Title of the study: Grey matter reshaping of language related regions depends on tumor lateralization
+%Authors: LLucia Manso-Ortega1, 2*, Laura De Frutos-Sagastuy1, Sandra Gisbert- Muñoz1, 2, Noriko Salamon3, Joe Qiao3, Patricia Walshaw4, Ileana Quiñones1*, Monika M. Połczyńska4
+%Script created by: Laura de Frutos-Sagastuy and Lucía Manso-Ortega
 %Last modification date: 04/03/2022
 %Content: Code for unziping files (.nii.gz) to .nii before working with them in SPM
 %This script has been done in Matlab 2021b. Note that not all Matlab versions have 'niftiread' available
