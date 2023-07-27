@@ -1,6 +1,9 @@
 function P04_Segmenting(path_participants, subject, reor, path_atlas, atlas, matter)
 
-%Authors: Lucia Manso-Ortega, Laura de Frutos-Sagastuy & Ileana Quiñones at the Basque Center on Cognition, Brain and Language (BCBL), San Sebastian, Spain
+%Title of the study: Grey matter reshaping of language related regions depends on tumor lateralization
+%Authors: LLucia Manso-Ortega1, 2*, Laura De Frutos-Sagastuy1, Sandra Gisbert- Muñoz1, 2, Noriko Salamon3, Joe Qiao3, Patricia Walshaw4, Ileana Quiñones1*, Monika M. Połczyńska4
+%Original script created by Sandra Gisbert-Muñoz and Ileana Quiñones
+%Modifications for the described study: Lucía Manso-Ortega and Laura de Frutos-Sagastuy
 %Last modification date: 01/06/2022
 %Content: Voxel Based Morphometry Analysis for brain tumor patients
 
