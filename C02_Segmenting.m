@@ -125,15 +125,15 @@ spm_jobman('run', matlabbatch);
 display(['Done segment - Suj_' subject]);
 
 %% 5.Smooth
-% 
-% matlabbatch = load ('Template_Smooth.mat');
-% matlabbatch = matlabbatch.matlabbatch;
-% matlabbatch{1}.spm.spatial.smooth.data = cellstr(spm_select('FPList',[path_participants,filesep,subject,filesep,t1folder.name], '^wc.*.nii$'));
-% matlabbatch{1}.spm.spatial.smooth.fwhm = [8 8 8];
-% spm_jobman('run', matlabbatch);
-% display(['Done smooth - Suj_' subject]);
-% 
-% toc;
+ 
+matlabbatch = load ('Template_Smooth.mat');
+matlabbatch = matlabbatch.matlabbatch;
+matlabbatch{1}.spm.spatial.smooth.data = cellstr(spm_select('FPList',[path_participants,filesep,subject,filesep,t1folder.name], '^wc.*.nii$'));
+matlabbatch{1}.spm.spatial.smooth.fwhm = [8 8 8];
+spm_jobman('run', matlabbatch);
+display(['Done smooth - Suj_' subject]);
+ 
+toc;
 
 %% 6. Volume estimation
 t1folder = dir([path_participants,filesep,subject,filesep,'*T1_sag*']); %define T1 folder
