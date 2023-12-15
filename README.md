@@ -75,10 +75,9 @@ For the development of this project, we have used the following softwares and to
 <img src="https://people.cas.sc.edu/rorden/mricro/icon.png" height=10 width=15/> [Mricron](https://www.nitrc.org/projects/mricron) software for creating the tumor masks 
 
   
-
-
 # License
 
+Apache License 2.0
 
 # Contact
 - Lucía Manso-Ortega: 📧 lmanso@bcbl.eu 🐦 [@lmanso_](https://twitter.com/lmanso_?t=IrcvEAfN-fsiAWpH_0HFhA&s=08)
@@ -90,6 +89,8 @@ Original codes were created by Sandra Gisbert-Muñonz and Ileana Quiñones and c
 Codes published in this repository were adapted by Lucía Manso-Ortega & Laura de Frutos-Sagastuy for the study "Grey matter reshaping of language related regions depends on tumor lateralization".
 
 # Citation
-If you use this code, please cite as 
+If you use this code, please cite as: Manso-Ortega L, De Frutos-Sagastuy L, Gisbert-Muñoz S, Salamon N, Qiao J, Walshaw P, Quiñones I, Połczyńska MM. Grey matter reshaping of language-related regions depends on tumor lateralization. bioRxiv [Preprint]. 2023 Feb 2:2023.02.02.526219. doi: 10.1101/2023.02.02.526219. Update in: Cancers (Basel). 2023 Jul 28;15(15): PMID: 36778417; PMCID: PMC9915653.
 
 # Frequently asked questions
+
+This section will be updated upon receiving further questions about the work.
